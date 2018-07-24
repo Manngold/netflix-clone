@@ -26,54 +26,8 @@ html, body{
 }
 #bell_icon{
     margin-left: 20px;
-    font-size: 20px;
+    margin-right: 20px;
 }
-#icon_box{
-    float: right;
-    line-height: 105px;
-    margin-right: 40px;
-    font-size: 25px;
-}
-article{
-    display: flex;
-    justify-content: center;
-}
-.video_background{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 1296px;
-    height: 730px;
-    background: linear-gradient(to right, #000000 0%, rgba(255, 0, 0, 0) 100%),url(https://espngrantland.files.wordpress.com/2014/10/whiplash-jk-simmons-miles-teller-1.jpg?w=1296);
-}
-.text-wrapper{
-    margin: 0px 0px 50px 40px;
-}
-.main-text{
-    
-    height: 70px;
-    width: 512px;
-}
-h1 {
-    margin-bottom: 30px;
-    font-size: 60px;
-    color: #ffffff;
-}
-h3{
-    color: #686060;
-    margin: 0;
-}
-
-.play-btn{
-    margin: 0px 100px 60px 0px;
-    font-size: 80px;
-    color: #ffffff;
-}
-.play-btn:hover{
-    color: #E50914;
-    font-size: 90px;
-    transition: 0.5s;
-}
-.play-btn:not(:hover){
-    transition: 0.5s;
+#user_icon{
+    margin-right: 10px;
 }
