@@ -2,32 +2,107 @@ html, body{
     margin: 0;
     background-color: #000000;
 }
-.navigator {
+.nav_wrapper{
+    
+}
+nav{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: #000000;
 }
-.logo{
+#logo_img{
+    position: relative;
+    float: left;
     margin-top: 5px;
     margin-left: 20px;
-    height: 100px;
+    height: 170px;
 }
-.nav_div{
-    margin-left: 15px;
-    margin-right: 10px;
+#menu_box li a{
+    font-size: 23px;
     color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 20px;
 }
-.icon_div{
+a:hover{
+    background-color: #E50914;
+    border-radius: 8px;
+    padding: 6px 10px 10px 10px;
+    transition: 0.5s;
+}
+a:not(:hover){
+    transition: 0.5s;
+}
+#menu_box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+/* #icon_box{
+    list-style: none;
+    float: right;
     font-size: 23px;
     padding-right: 20px;
     margin-left: 400px;
     color: #FFFFFF;
-}
+} */
 #bell_icon{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0px 10px 0px 10px;
 }
-#user_icon{
-    margin-right: 10px;
+#icon_box{
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+article{
+    display: flex;
+    justify-content: center;
+}
+.video_background{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1296px;
+    height: 730px;
+    background: linear-gradient(to right, #000000 0%, rgba(255, 0, 0, 0) 100%),url(https://espngrantland.files.wordpress.com/2014/10/whiplash-jk-simmons-miles-teller-1.jpg?w=1296);
+}
+.text-wrapper{
+    margin: 0px 0px 50px 40px;
+}
+.main-text{
+    
+    height: 70px;
+    width: 512px;
+}
+h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    color: #ffffff;
+}
+h3{
+    color: #686060;
+    margin: 0;
+}
+
+.play-btn{
+    margin: 0px 100px 60px 0px;
+    font-size: 80px;
+    color: #ffffff;
+}
+.play-btn:hover{
+    color: #E50914;
+    font-size: 90px;
+    transition: 0.5s;
+}
+.play-btn:not(:hover){
+    transition: 0.5s;
 }
