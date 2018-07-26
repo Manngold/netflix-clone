@@ -22,7 +22,23 @@
            </ul>
            <ul id="icon_box">
                <li>
-                   <i id="search_icon" class="fas fa-search"></i>
+                   <script>
+                   const searchBox = () => {
+                       let createInput = () => {
+                            let inputBox = document.createElement("input");
+                            let newBox = getClass.appendChild(inputBox);
+                            newBox.id = "search-box";
+                            newBox.placeholder = "search";                           
+                       }
+                       let getClass = document.querySelector("#search_icon");
+                       if (getClass == event.target){
+                           getClass.childNodes.length >= 1 
+                           ? document.querySelector("#search-box").remove()
+                           : createInput();
+                       }
+                   }
+                   </script>
+                   <i onclick="searchBox()" id="search_icon" class="fas fa-search"></i>
                    <i id="bell_icon" class="fas fa-bell"></i>
                    <i id="user_icon" class="fas fa-user"></i>
                </li>
@@ -36,7 +52,12 @@
             <h3 class="main-text">2014 R 1h 46m</h3>
             <h3 class="main-text">His music teacher is a living nightmare. But that nightmare just might bring out his best -- if he can survive it.</h3>
         </div>
-        <div class="play-btn"><i class="far fa-play-circle"></i></div>
+        <div class="play-btn"><i onclick="play()" class="far fa-play-circle"></i></div>
+        <script>
+            const play = () => {
+                console.log("click");
+            }
+        </script>
     </div>
     </article>
 </body>

@@ -3,6 +3,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const fs = require('fs');
 
+
 const app = express();
 app.use(express.static(path.join(__dirname, '../public/image')));
 app.use(express.static(path.join(__dirname, '../view')));
