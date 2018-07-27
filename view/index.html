@@ -36,8 +36,7 @@
                 <h3 class="main-text">2014 R 1h 46m</h3>
                 <h3 class="main-text">His music teacher is a living nightmare. But that nightmare just might bring out his best -- if he can survive it.</h3>
             </div>
-            <video id="inactive-video" src="whiplash.mov"></video>
-            <div class="play-btn"><i onclick="play()" class="far fa-play-circle"></i></div>
+            <div class="play-btn"><i onclick="location.href = 'http://localhost:3000/player';" class="far fa-play-circle"></i></div>
             <script>
                 const searchBox = () => {
                     let createInput = () => {
@@ -52,12 +51,15 @@
                         ? document.querySelector("#search-box").remove()
                         : createInput();
                     }
-                }
-                const play = () => {
-                    let getId = document.querySelector("#inactive-video");
-                    getId.id = "active-video";
-                }
+                }    
             </script>
+        </div>
+        <div class="poster-wrapper">
+            <div class="poster"><img src="moonlight.jpg" alt=""></div>
+            <div class="poster"><img src="gone-girl.jpg" alt=""></div>
+            <div class="poster"><img src="la-la-land.jpg" alt=""></div>
+            <div class="poster"><img src="get-out.jpg" alt=""></div>
+            <div class="poster"><img src="hurt-locker.jpg" alt=""></div>
         </div>
     </article>
 </body>

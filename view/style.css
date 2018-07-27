@@ -42,14 +42,7 @@ a:not(:hover){
 ul{
     list-style: none;
 }
-/* #icon_box{
-    list-style: none;
-    float: right;
-    font-size: 23px;
-    padding-right: 20px;
-    margin-left: 400px;
-    color: #FFFFFF;
-} */
+
 #bell_icon{
     margin: 0px 10px 0px 10px;
 }
@@ -78,6 +71,7 @@ ul{
 article{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .video_background{
     display: flex;
@@ -105,13 +99,6 @@ h3{
     margin: 0;
 }
 
-#active-video {
-    width: 1296px;
-    height: 720px;
-    opacity: 1;
-    transition: 1s;
-}
-
 .play-btn{
     margin: 0px 100px 60px 0px;
     font-size: 80px;
@@ -126,10 +113,21 @@ h3{
     transition: 0.5s;
 }
 
-i:hover{
+#icon_box li i:hover{
     color: #E50914;
     transition:0.5s;
 }
-i:not(:hover){
+#icon_box li i:not(:hover){
     transition: 0.5s;
+}
+.poster-wrapper{
+    display: flex;
+}
+.poster img:hover{
+    border: 10px solid #E50914;
+    border-radius: 5px;
+    transition: 1s;
+}
+.poster:not(:hover){
+    transition: 1s;
 }
