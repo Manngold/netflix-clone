@@ -123,6 +123,9 @@ h3{
 .poster-wrapper{
     display: flex;
 }
+.poster{
+    margin: 5px;
+}
 .poster img:hover{
     border: 10px solid #E50914;
     border-radius: 5px;
